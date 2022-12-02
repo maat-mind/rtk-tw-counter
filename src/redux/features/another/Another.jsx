@@ -6,7 +6,7 @@ export default function Another() {
   const dispatch = useDispatch()
 
   return (
-    <div className='grid place-content-center text-center max-w-xs gap-3'>
+    <div className='grid place-content-center text-center gap-3'>
       <h1 className='text-3xl font-bold'>Another</h1>
       <button
         className='border-double border-4 border-purple-500 bg-purple-600/25 w-32 mx-auto'

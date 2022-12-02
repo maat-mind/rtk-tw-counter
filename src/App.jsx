@@ -4,9 +4,9 @@ import Counter from './redux/features/counter/Counter.jsx'
 
 export default function App() {
   return (
-    <div className='grid place-content-center min-h-screen bg-indigo-300'>
+    <div className='grid place-content-center min-h-screen bg-stone-200'>
       <Counter />
-      <Another />
+      {/* <Another /> */}
     </div>
   )
 }
