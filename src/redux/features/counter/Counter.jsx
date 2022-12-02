@@ -1,5 +1,5 @@
 import { useDispatch, useSelector } from 'react-redux'
-import { decrement, increment } from './index'
+import { decrement, increment, reset } from './index'
 
 export default function Counter() {
   const count = useSelector((state) => state.counter.value)
@@ -21,6 +21,12 @@ export default function Counter() {
         aria-label='Increment value'
         onClick={() => dispatch(increment())}>
         +
+      </button>
+
+      <button
+        className='col-span-3 text-xl w-72 h-10 bg-blue-500 font-bold text-white rounded'
+        onClick={() => dispatch(reset())}>
+        reset
       </button>
     </div>
   )
